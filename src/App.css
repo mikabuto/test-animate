@@ -1,8 +1,36 @@
 .App {
+  padding: 24px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
 }
 
-.App-logo {
+.button {
+  width: 300px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #61dafb;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #59c8e7;
+  }
+  
+  &:active {
+    background-color: #79dcf7;
+  }
+}
+
+.block {
+  width: 300px;
+  padding: 8px;
+  border: solid #fff 0.5px;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,10 +39,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
